@@ -54,7 +54,7 @@ body {
 
 .brand-title {
   font-family: 'Brush Script MT', cursive;
-  font-size: 48px; /* antes: 40px */
+  font-size: 40px; /* antes: 40px */
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
