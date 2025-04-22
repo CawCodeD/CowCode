@@ -20,75 +20,41 @@ body {
 
 .left-section {
   flex: 1;
+  max-width: 380px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  max-width: 500px;
 }
 
 .description {
   text-align: center;
-  font-size: 1rem;
-  line-height: 1.8;
+}
+
+.brand-title {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.6;
   color: #ddd;
 }
 
 .right-section {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-/* Nuevo: limitar el ancho del panel solo en pantallas grandes */
-@media (min-width: 1024px) {
-  .right-section {
-    max-width: 300px;
-  }
-}
-
-
-.brand-title {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 40px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: #fff;
+  max-width: 380px;
 }
 
 .form-box {
-  width: 100%; /* Antes era 100% */
   background-color: #121212;
   border: 1px solid #262626;
-  padding: 30px 20px;
+  padding: 40px;
   border-radius: 10px;
   text-align: center;
 }
-
-.login-form input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  background-color: #262626;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 14px;
-}
-
-.login-form button {
-  width: 100%;
-  padding: 8px;
-  background-color: #0095f6;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 
 .login-form input {
   width: 100%;
@@ -141,7 +107,6 @@ body {
 }
 
 .register-box {
-  width: 100%;
   background-color: #121212;
   border: 1px solid #262626;
   margin-top: 10px;
@@ -156,6 +121,10 @@ body {
   font-weight: bold;
 }
 
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
@@ -165,8 +134,8 @@ body {
     display: none;
   }
 
-  .right-section {
-    max-width: 100%;
+  .mobile-only {
+    display: block;
   }
 }
 
