@@ -36,11 +36,19 @@ body {
 
 .right-section {
   flex: 1;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
+
+/* Nuevo: limitar el ancho del panel solo en pantallas grandes */
+@media (min-width: 1024px) {
+  .right-section {
+    max-width: 300px;
+  }
+}
+
 
 .brand-title {
   font-family: 'Brush Script MT', cursive;
@@ -51,7 +59,7 @@ body {
 }
 
 .form-box {
-  width: 50%; /* Antes era 100% */
+  width: 100%; /* Antes era 100% */
   background-color: #121212;
   border: 1px solid #262626;
   padding: 30px 20px;
@@ -133,7 +141,7 @@ body {
 }
 
 .register-box {
-  width: 50%;
+  width: 100%;
   background-color: #121212;
   border: 1px solid #262626;
   margin-top: 10px;
