@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #000;
+  font-family: Arial, sans-serif;
   color: #fff;
 }
 
@@ -15,133 +15,58 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  gap: 80px;
   padding: 20px;
 }
 
 .left-section {
-  flex: 1;
-  max-width: 380px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 400px;
+  text-align: center;
 }
 
-.description {
+.logo-img {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+  filter: drop-shadow(0 0 10px #fff);
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.right-section {
+  width: 100%;
+  max-width: 350px;
+}
+
+.title-box {
+  width: 100%;
+  background-color: #121212;
+  border: 1px solid #262626;
+  padding: 25px 0;
+  border-radius: 10px 10px 0 0;
   text-align: center;
 }
 
 .brand-title {
   font-family: 'Brush Script MT', cursive;
   font-size: 40px;
-  margin-bottom: 15px;
-}
-
-.project-description {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.right-section {
-  flex: 1;
-  max-width: 380px;
+  color: #fff;
 }
 
 .form-box {
   background-color: #121212;
   border: 1px solid #262626;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   text-align: center;
 }
 
 .login-form input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  background-color: #262626;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 14px;
-}
 
-.login-form button {
-  width: 100%;
-  padding: 10px;
-  background-color: #0095f6;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.divider {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.divider .line {
-  flex: 1;
-  height: 1px;
-  background-color: #333;
-}
-
-.divider .or {
-  margin: 0 10px;
-  color: #aaa;
-  font-size: 12px;
-}
-
-.forgot {
-  margin-top: 10px;
-  font-size: 12px;
-}
-
-.forgot a {
-  color: #0095f6;
-  text-decoration: none;
-}
-
-.register-box {
-  background-color: #121212;
-  border: 1px solid #262626;
-  margin-top: 10px;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.register-box a {
-  color: #0095f6;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.mobile-only {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-  }
-
-  .left-section {
-    display: none;
-  }
-
-  .mobile-only {
-    display: block;
-  }
-}
-
-
-
-  .right-section {
-    max-width: 100%;
-  }
-}
