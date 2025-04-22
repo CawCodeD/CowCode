@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  max-width: 500px;
+}
+
+.description {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+.right-section {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand-title {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.form-box {
+  width: 100%;
+  background-color: #121212;
+  border: 1px solid #262626;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #262626;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.divider .line {
+  flex: 1;
+  height: 1px;
+  background-color: #333;
+}
+
+.divider .or {
+  margin: 0 10px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.forgot {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.forgot a {
+  color: #0095f6;
+  text-decoration: none;
+}
+
+.register-box {
+  width: 100%;
+  background-color: #121212;
+  border: 1px solid #262626;
+  margin-top: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.register-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    display: none;
+  }
+
+  .right-section {
+    max-width: 100%;
+  }
+}
+
+
+
+  .right-section {
+    max-width: 100%;
+  }
+}
