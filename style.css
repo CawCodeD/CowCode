@@ -184,3 +184,7 @@ body {
   color: #fff;
   margin-bottom: 20px;
 }
+.form-box-small {
+  max-width: 210px; /* 60% del tamaño original */
+}
+
